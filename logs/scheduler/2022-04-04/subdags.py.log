@@ -1,0 +1,96 @@
+[2022-04-04 01:07:30,138] {scheduler_job.py:182} INFO - Started process (PID=14438) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:07:30,139] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:07:30,140] {logging_mixin.py:104} INFO - [2022-04-04 01:07:30,140] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:07:30,148] {logging_mixin.py:104} INFO - [2022-04-04 01:07:30,147] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:07:30,148] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:07:30,171] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.036 seconds
+[2022-04-04 01:08:00,277] {scheduler_job.py:182} INFO - Started process (PID=14625) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:00,278] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:08:00,278] {logging_mixin.py:104} INFO - [2022-04-04 01:08:00,278] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:00,297] {logging_mixin.py:104} INFO - [2022-04-04 01:08:00,296] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:08:00,297] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:00,414] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.139 seconds
+[2022-04-04 01:08:30,591] {scheduler_job.py:182} INFO - Started process (PID=14651) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:30,592] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:08:30,592] {logging_mixin.py:104} INFO - [2022-04-04 01:08:30,592] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:30,603] {logging_mixin.py:104} INFO - [2022-04-04 01:08:30,602] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:08:30,609] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:08:30,696] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.106 seconds
+[2022-04-04 01:09:00,873] {scheduler_job.py:182} INFO - Started process (PID=14677) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:00,874] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:09:00,875] {logging_mixin.py:104} INFO - [2022-04-04 01:09:00,875] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:00,882] {logging_mixin.py:104} INFO - [2022-04-04 01:09:00,882] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:09:00,883] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:00,949] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.079 seconds
+[2022-04-04 01:09:31,091] {scheduler_job.py:182} INFO - Started process (PID=14768) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:31,091] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:09:31,092] {logging_mixin.py:104} INFO - [2022-04-04 01:09:31,092] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:31,099] {logging_mixin.py:104} INFO - [2022-04-04 01:09:31,099] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:09:31,099] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:09:31,144] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.055 seconds
+[2022-04-04 01:10:01,286] {scheduler_job.py:182} INFO - Started process (PID=14798) to work on /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:10:01,287] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags.py for tasks to queue
+[2022-04-04 01:10:01,287] {logging_mixin.py:104} INFO - [2022-04-04 01:10:01,287] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:10:01,293] {logging_mixin.py:104} INFO - [2022-04-04 01:10:01,293] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+  File "/home/airflow/airflow/dags/subdags.py", line 5, in <module>
+    from subdags.subdag_parallel_dag import subdag_parallel_dag
+ModuleNotFoundError: No module named 'subdags.subdag_parallel_dag'; 'subdags' is not a package
+[2022-04-04 01:10:01,294] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags.py
+[2022-04-04 01:10:01,344] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags.py took 0.060 seconds

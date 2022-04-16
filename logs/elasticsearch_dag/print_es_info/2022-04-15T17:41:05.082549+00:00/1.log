@@ -1,0 +1,48 @@
+[2022-04-15 17:41:06,405] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T17:41:05.082549+00:00 [queued]>
+[2022-04-15 17:41:06,414] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T17:41:05.082549+00:00 [queued]>
+[2022-04-15 17:41:06,414] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-15 17:41:06,414] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-04-15 17:41:06,415] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-15 17:41:06,430] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): print_es_info> on 2022-04-15T17:41:05.082549+00:00
+[2022-04-15 17:41:06,432] {standard_task_runner.py:52} INFO - Started process 11560 to run task
+[2022-04-15 17:41:06,437] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'elasticsearch_dag', 'print_es_info', '2022-04-15T17:41:05.082549+00:00', '--job-id', '138', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elasticsearch_dag.py', '--cfg-path', '/tmp/tmpf1ysj1n3', '--error-file', '/tmp/tmprjhct1ob']
+[2022-04-15 17:41:06,438] {standard_task_runner.py:77} INFO - Job 138: Subtask print_es_info
+[2022-04-15 17:41:06,504] {logging_mixin.py:104} INFO - Running <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T17:41:05.082549+00:00 [running]> on host airflowvm
+[2022-04-15 17:41:06,620] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=print_es_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-15T17:41:05.082549+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-15T17:41:05.082549+00:00
+[2022-04-15 17:41:06,636] {base.py:69} INFO - Using connection to: id: elasticsearch_default. Host: localhost, Port: 9200, Schema: http, Login: None, Password: None, extra: {}
+[2022-04-15 17:41:06,637] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/elasticsearch_dag.py", line 12, in _print_es_info
+    print(hook.info())
+  File "/home/airflow/airflow/plugins/elasticsearch_plugin/hooks/elastic_hook.py", line 27, in info
+    return self.es.info()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/client/utils.py", line 152, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/client/__init__.py", line 286, in info
+    return self.transport.perform_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/transport.py", line 355, in perform_request
+    connection = self.get_connection()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/transport.py", line 229, in get_connection
+    return self.connection_pool.get_connection()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection_pool.py", line 313, in get_connection
+    raise ImproperlyConfigured("No connections were configured")
+elasticsearch.exceptions.ImproperlyConfigured: No connections were configured
+[2022-04-15 17:41:06,640] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=elasticsearch_dag, task_id=print_es_info, execution_date=20220415T174105, start_date=20220415T174106, end_date=20220415T174106
+[2022-04-15 17:41:06,694] {local_task_job.py:151} INFO - Task exited with return code 1

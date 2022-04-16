@@ -1,0 +1,26 @@
+[2022-04-16 03:45:52,541] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T00:00:00+00:00 [queued]>
+[2022-04-16 03:45:52,625] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T00:00:00+00:00 [queued]>
+[2022-04-16 03:45:52,625] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-16 03:45:52,625] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-04-16 03:45:52,626] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-16 03:45:52,662] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): print_es_info> on 2022-04-15T00:00:00+00:00
+[2022-04-16 03:45:52,686] {standard_task_runner.py:52} INFO - Started process 39776 to run task
+[2022-04-16 03:45:52,702] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'elasticsearch_dag', 'print_es_info', '2022-04-15T00:00:00+00:00', '--job-id', '141', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elasticsearch_dag.py', '--cfg-path', '/tmp/tmpt720xly7', '--error-file', '/tmp/tmpm712czn7']
+[2022-04-16 03:45:52,713] {standard_task_runner.py:77} INFO - Job 141: Subtask print_es_info
+[2022-04-16 03:45:52,977] {logging_mixin.py:104} INFO - Running <TaskInstance: elasticsearch_dag.print_es_info 2022-04-15T00:00:00+00:00 [running]> on host airflowvm
+[2022-04-16 03:45:53,259] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=print_es_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-15T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-15T00:00:00+00:00
+[2022-04-16 03:45:53,287] {base.py:69} INFO - Using connection to: id: elasticsearch_default. Host: localhost, Port: 9200, Schema: http, Login: None, Password: None, extra: {}
+[2022-04-16 03:45:53,314] {logging_mixin.py:104} WARNING - /home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/base.py:193 ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2022-04-16 03:45:53,330] {base.py:255} INFO - GET http://localhost:9200/ [status:200 request:0.020s]
+[2022-04-16 03:45:53,332] {logging_mixin.py:104} INFO - {'name': 'airflowvm', 'cluster_name': 'elasticsearch', 'cluster_uuid': 'OQNUt8IhSlmkVvYAmZSZIQ', 'version': {'number': '7.17.2', 'build_flavor': 'default', 'build_type': 'deb', 'build_hash': 'de7261de50d90919ae53b0eff9413fd7e5307301', 'build_date': '2022-03-28T15:12:21.446567561Z', 'build_snapshot': False, 'lucene_version': '8.11.1', 'minimum_wire_compatibility_version': '6.8.0', 'minimum_index_compatibility_version': '6.0.0-beta1'}, 'tagline': 'You Know, for Search'}
+[2022-04-16 03:45:53,332] {python.py:151} INFO - Done. Returned value was: None
+[2022-04-16 03:45:53,433] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=elasticsearch_dag, task_id=print_es_info, execution_date=20220415T000000, start_date=20220416T034552, end_date=20220416T034553
+[2022-04-16 03:45:53,557] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-16 03:45:53,619] {local_task_job.py:151} INFO - Task exited with return code 0

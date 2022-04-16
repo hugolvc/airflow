@@ -1,0 +1,86 @@
+[2022-04-03 23:22:51,819] {scheduler_job.py:182} INFO - Started process (PID=4835) to work on /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:22:51,832] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py for tasks to queue
+[2022-04-03 23:22:51,832] {logging_mixin.py:104} INFO - [2022-04-03 23:22:51,832] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:22:51,833] {logging_mixin.py:104} INFO - [2022-04-03 23:22:51,833] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags/subdag_parallel_dag.py", line 5
+    with DAG(dag_id=f'{parent_dag_id}.{child_dag_id}', default_args) as dag:
+                                                       ^
+SyntaxError: positional argument follows keyword argument
+[2022-04-03 23:22:51,844] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:22:52,018] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py took 0.201 seconds
+[2022-04-03 23:23:22,311] {scheduler_job.py:182} INFO - Started process (PID=5158) to work on /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:22,312] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py for tasks to queue
+[2022-04-03 23:23:22,313] {logging_mixin.py:104} INFO - [2022-04-03 23:23:22,312] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:22,314] {logging_mixin.py:104} INFO - [2022-04-03 23:23:22,313] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags/subdag_parallel_dag.py", line 5
+    with DAG(dag_id=f'{parent_dag_id}.{child_dag_id}', default_args) as dag:
+                                                       ^
+SyntaxError: positional argument follows keyword argument
+[2022-04-03 23:23:22,318] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:22,355] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py took 0.046 seconds
+[2022-04-03 23:23:52,522] {scheduler_job.py:182} INFO - Started process (PID=5297) to work on /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:52,522] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py for tasks to queue
+[2022-04-03 23:23:52,523] {logging_mixin.py:104} INFO - [2022-04-03 23:23:52,523] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:52,529] {logging_mixin.py:104} INFO - [2022-04-03 23:23:52,528] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags/subdag_parallel_dag.py", line 5
+    with DAG(dag_id=f'{parent_dag_id}.{child_dag_id}', default_args) as dag:
+                                                       ^
+SyntaxError: positional argument follows keyword argument
+[2022-04-03 23:23:52,534] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:23:52,617] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py took 0.098 seconds
+[2022-04-03 23:24:22,736] {scheduler_job.py:182} INFO - Started process (PID=5347) to work on /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:22,737] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py for tasks to queue
+[2022-04-03 23:24:22,737] {logging_mixin.py:104} INFO - [2022-04-03 23:24:22,737] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:22,738] {logging_mixin.py:104} INFO - [2022-04-03 23:24:22,738] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags/subdag_parallel_dag.py", line 5
+    with DAG(dag_id=f'{parent_dag_id}.{child_dag_id}', default_args) as dag:
+                                                       ^
+SyntaxError: positional argument follows keyword argument
+[2022-04-03 23:24:22,743] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:22,780] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py took 0.046 seconds
+[2022-04-03 23:24:52,881] {scheduler_job.py:182} INFO - Started process (PID=5427) to work on /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:52,882] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py for tasks to queue
+[2022-04-03 23:24:52,882] {logging_mixin.py:104} INFO - [2022-04-03 23:24:52,882] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:52,884] {logging_mixin.py:104} INFO - [2022-04-03 23:24:52,883] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/subdags/subdag_parallel_dag.py", line 5
+    with DAG(dag_id=f'{parent_dag_id}.{child_dag_id}', default_args) as dag:
+                                                       ^
+SyntaxError: positional argument follows keyword argument
+[2022-04-03 23:24:52,895] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py
+[2022-04-03 23:24:52,945] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/subdags/subdag_parallel_dag.py took 0.067 seconds
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
